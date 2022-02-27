@@ -65,3 +65,21 @@ namespace JwtAuthDemo.Core
         }
     }
 }
+/*
+    -- Global.asax.cs
+    public class WebApiApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+        }
+
+        private void Application_AuthenticateRequest(object sender, EventArgs e)
+        {
+            JwtHelper.AuthenticateRequest();
+        }
+    }
+
+
+
+*/
